@@ -128,17 +128,7 @@ const Index = () => {
       {/* Team Section */}
       <section className="section-padding bg-black/60 text-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">Our Team</h2>
-          
-          <div className="max-w-3xl mx-auto mb-16 text-center space-y-4">
-            <p className="text-lg text-gray-300">
-              Founded by three partners. After many years in corporate consultancies, we decided to take things into our own hands.
-            </p>
-            <p className="text-lg text-gray-300">
-              We have grown tired of the inefficiency and corporate rigidness when designing and developing exciting digital products.
-            </p>
-          </div>
-
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Our Team</h2>
           <div className="grid md:grid-cols-3 gap-12">
             {[
               {
