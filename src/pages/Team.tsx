@@ -20,19 +20,19 @@ const Team = () => {
               {
                 name: "Jiří Buček",
                 role: "Managing Director",
-                image: "/lovable-uploads/4b41e73e-9171-4f3a-8638-3a053c87a91e.png",
+                image: "/lovable-uploads/22cb0af3-eb12-4617-8ec1-936ca7d5bb23.png",
                 description: "Leading our strategic vision and technical direction"
               },
               {
                 name: "Jason Nel",
                 role: "Commercial Director",
-                image: "/lovable-uploads/af2171f7-8d88-4331-9400-d1bb9fb2b5e4.png",
+                image: "/lovable-uploads/28a5f1e5-7bfe-441f-b4d1-8f73f680760d.png",
                 description: "Driving business growth and client relationships"
               },
               {
                 name: "Martin Majer",
                 role: "Operations Director",
-                image: "/lovable-uploads/4e20632f-dc79-4c5c-8612-73755b2a9d13.png",
+                image: "/lovable-uploads/019f2cea-e639-4352-b79b-09a2c223ca01.png",
                 description: "Ensuring smooth delivery of all projects"
               }
             ].map((member, index) => (
