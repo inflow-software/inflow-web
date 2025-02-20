@@ -1,5 +1,6 @@
+
 import { useEffect } from 'react';
-import { ArrowRight, CircleArrowUp, Mail, MapPin } from 'lucide-react';
+import { CircleArrowUp } from 'lucide-react';
 import Navbar from '../components/Navbar';
 
 const Index = () => {
@@ -34,7 +35,12 @@ const Index = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6 md:px-12 lg:px-24">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center space-y-6">
+          <div className="text-center space-y-12">
+            <img 
+              src="/lovable-uploads/69108197-d33f-4256-bcc1-7e3c9a1a9086.png" 
+              alt="Inflow Logo" 
+              className="h-24 md:h-32 mx-auto mb-8"
+            />
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
               Fast, Smart, and Built to Last
             </h1>

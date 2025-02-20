@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -29,11 +30,7 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2">
-            <img src="/lovable-uploads/69108197-d33f-4256-bcc1-7e3c9a1a9086.png" alt="Inflow Logo" className="h-8" />
-          </Link>
-
+        <div className="flex items-center justify-end">
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <Link to="/" className="nav-link text-white">Home</Link>
