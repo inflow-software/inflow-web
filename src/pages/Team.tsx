@@ -9,6 +9,12 @@ const Team = () => {
         <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-12">Our Team</h1>
           
+          <div className="max-w-3xl mx-auto mb-16">
+            <p className="text-lg text-yellow-400 text-center">
+              Our team brings together over 30 years of combined experience in IT services, Legal, Commercial and operations.
+            </p>
+          </div>
+          
           <div className="grid md:grid-cols-3 gap-12">
             {[
               {
@@ -30,11 +36,11 @@ const Team = () => {
                 description: "Ensuring smooth delivery of all projects"
               }
             ].map((member, index) => (
-              <div key={index} className="text-center">
+              <div key={index} className="text-center glass-panel p-8 rounded-lg">
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-48 h-48 rounded-full mx-auto mb-6 object-cover"
+                  className="w-48 h-48 rounded-full mx-auto mb-6 object-cover border-2 border-yellow-400"
                 />
                 <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
                 <p className="text-yellow-400 mb-4">{member.role}</p>
