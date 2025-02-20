@@ -26,17 +26,17 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-black/80 backdrop-blur-md shadow-sm' : 'bg-transparent'
+        isScrolled ? 'bg-black/80 backdrop-blur-md shadow-lg' : 'bg-black/40 backdrop-blur-sm'
       }`}
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-end">
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="nav-link text-white">Home</Link>
-            <Link to="/development" className="nav-link text-white">Development</Link>
-            <Link to="/team" className="nav-link text-white">Team</Link>
-            <Link to="/contact" className="nav-link text-white">Contact</Link>
+            <Link to="/" className="nav-link text-white font-semibold">Home</Link>
+            <Link to="/development" className="nav-link text-white font-semibold">Development</Link>
+            <Link to="/team" className="nav-link text-white font-semibold">Team</Link>
+            <Link to="/contact" className="nav-link text-white font-semibold">Contact</Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -52,10 +52,10 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 bg-black/95 backdrop-blur-md shadow-lg py-4">
             <div className="flex flex-col space-y-4 px-6">
-              <Link to="/" className="nav-link text-white" onClick={() => setIsMenuOpen(false)}>Home</Link>
-              <Link to="/development" className="nav-link text-white" onClick={() => setIsMenuOpen(false)}>Development</Link>
-              <Link to="/team" className="nav-link text-white" onClick={() => setIsMenuOpen(false)}>Team</Link>
-              <Link to="/contact" className="nav-link text-white" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+              <Link to="/" className="nav-link text-white font-semibold" onClick={() => setIsMenuOpen(false)}>Home</Link>
+              <Link to="/development" className="nav-link text-white font-semibold" onClick={() => setIsMenuOpen(false)}>Development</Link>
+              <Link to="/team" className="nav-link text-white font-semibold" onClick={() => setIsMenuOpen(false)}>Team</Link>
+              <Link to="/contact" className="nav-link text-white font-semibold" onClick={() => setIsMenuOpen(false)}>Contact</Link>
             </div>
           </div>
         )}

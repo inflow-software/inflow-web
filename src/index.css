@@ -48,8 +48,9 @@
   }
 
   .waves {
-    @apply absolute w-full h-[500px] overflow-hidden;
+    @apply fixed top-0 left-0 w-full h-[500px] overflow-hidden;
     background: linear-gradient(180deg, #9C7A36 0%, rgba(156, 122, 54, 0) 100%);
+    z-index: 0;
   }
 
   .wave {
