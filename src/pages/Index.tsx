@@ -136,37 +136,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      {/* Contact Section */}
-      <section className="section-padding bg-black/40">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Get in Touch</h2>
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="space-y-6">
-              <div className="flex items-center space-x-4">
-                <Mail className="w-6 h-6 text-yellow-400" />
-                <a href="mailto:jason.nel@inflow.software" className="hover:text-yellow-600 transition-colors">
-                  jason.nel@inflow.software
-                </a>
-              </div>
-              <div className="flex items-center space-x-4">
-                <MapPin className="w-6 h-6 text-yellow-400" />
-                <address className="not-italic">
-                  Uralská 689/7, 160 00, Praha 6
-                </address>
-              </div>
-            </div>
-            <div className="fade-in-section">
-              <iframe
-                title="Office Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.9891877914447!2d14.389545776932416!3d50.101780071811186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b952c3a17b923%3A0x8b9b52d358e2fa2!2zVXJhbHNrw6EgNjg5LzcsIDE2MCAwMCBQcmFoYSA2LURlanZpY2UsIEN6ZWNoaWE!5e0!3m2!1sen!2sus!4v1709764429544!5m2!1sen!2sus"
-                className="w-full h-[400px] rounded-lg"
-                loading="lazy"
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
