@@ -33,18 +33,18 @@ const Index = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-40 pb-32 px-6 md:px-12 lg:px-24">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center space-y-16">
+      <section className="pt-32 pb-20 px-6 md:px-12 lg:px-24">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center space-y-12">
             <img 
               src="/lovable-uploads/74cc2065-6695-4ce7-835a-b2643c862647.png" 
               alt="Inflow Logo" 
-              className="w-48 md:w-64 lg:w-80 h-auto mx-auto mb-12 object-contain"
+              className="w-48 md:w-64 lg:w-80 h-auto mx-auto mb-8 object-contain"
             />
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-tight">
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
               Fast, Smart, and Built to Last
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
               At inflow, we specialise in agile development and long-term support for digital products, helping businesses bring their visions to life with smart, fast, and adaptable solutions.
             </p>
           </div>
