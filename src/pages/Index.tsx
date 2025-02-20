@@ -37,7 +37,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center space-y-12">
             <img 
-              src="/lovable-uploads/9b2887d8-baa1-495f-ad70-4ee007f839d7.png" 
+              src="/lovable-uploads/74cc2065-6695-4ce7-835a-b2643c862647.png" 
               alt="Inflow Logo" 
               className="h-24 md:h-32 mx-auto mb-8"
             />
