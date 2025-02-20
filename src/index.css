@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
@@ -58,7 +59,7 @@
     background: url("data:image/svg+xml,%3Csvg viewBox='0 0 800 88.7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23FFC061'/%3E%3C/svg%3E");
     background-position: 0 bottom;
     background-repeat: repeat-x;
-    animation: wave 25s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    animation: wave-1 30s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
     transform: rotate(180deg);
     transform-origin: center top;
     top: 50px;
@@ -66,19 +67,19 @@
 
   .wave:nth-of-type(2) {
     top: 100px;
-    animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    animation: wave-2 22s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite, swell-2 7s ease infinite;
     opacity: 0.75;
     background: url("data:image/svg+xml,%3Csvg viewBox='0 0 800 88.7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23FFE5BE'/%3E%3C/svg%3E");
   }
 
   .wave:nth-of-type(3) {
     top: 150px;
-    animation: wave 15s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    animation: wave-3 15s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite, swell-3 5s ease infinite;
     opacity: 0.5;
     background: url("data:image/svg+xml,%3Csvg viewBox='0 0 800 88.7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%239C7A36'/%3E%3C/svg%3E");
   }
 
-  @keyframes wave {
+  @keyframes wave-1 {
     0% {
       transform: translateX(0) translateZ(0) scaleY(1) rotate(180deg);
     }
@@ -90,9 +91,42 @@
     }
   }
 
-  @keyframes swell {
+  @keyframes wave-2 {
+    0% {
+      transform: translateX(-50%) translateZ(0) scaleY(1) rotate(180deg);
+    }
+    50% {
+      transform: translateX(-25%) translateZ(0) scaleY(0.95) rotate(180deg);
+    }
+    100% {
+      transform: translateX(0) translateZ(0) scaleY(1) rotate(180deg);
+    }
+  }
+
+  @keyframes wave-3 {
+    0% {
+      transform: translateX(-25%) translateZ(0) scaleY(1) rotate(180deg);
+    }
+    50% {
+      transform: translateX(0) translateZ(0) scaleY(0.95) rotate(180deg);
+    }
+    100% {
+      transform: translateX(-50%) translateZ(0) scaleY(1) rotate(180deg);
+    }
+  }
+
+  @keyframes swell-2 {
     0%, 100% {
       transform: translateY(15px) rotate(180deg);
+    }
+    50% {
+      transform: translateY(-10px) rotate(180deg);
+    }
+  }
+
+  @keyframes swell-3 {
+    0%, 100% {
+      transform: translateY(10px) rotate(180deg);
     }
     50% {
       transform: translateY(-15px) rotate(180deg);
