@@ -1,6 +1,6 @@
 
 import { useEffect } from 'react';
-import { CircleArrowUp } from 'lucide-react';
+import { CircleArrowUp, Check, ArrowRight, Activity } from 'lucide-react';
 import Navbar from '../components/Navbar';
 
 const Index = () => {
@@ -37,7 +37,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center space-y-12">
             <img 
-              src="/lovable-uploads/69108197-d33f-4256-bcc1-7e3c9a1a9086.png" 
+              src="/lovable-uploads/9b2887d8-baa1-495f-ad70-4ee007f839d7.png" 
               alt="Inflow Logo" 
               className="h-24 md:h-32 mx-auto mb-8"
             />
@@ -91,18 +91,36 @@ const Index = () => {
       {/* Values Section */}
       <section className="section-padding bg-black/40">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-16">Our Values Are Simple</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-16">Our Values</h2>
+          
+          <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-16">
+            We act honestly, build trust, and get straight to the point. We stay "in shape" when it comes to technology – it is our passion and we stay up to date on what's happening. We're not nerds you can't communicate with; we speak your language.
+          </p>
+          
           <div className="grid md:grid-cols-3 gap-12">
-            {[
-              { title: "Transparency", description: "We act honestly and build trust" },
-              { title: "Straight to the point", description: "Clear communication without unnecessary jargon" },
-              { title: "Flow state", description: "We thrive in efficient, focused development" }
-            ].map((value, index) => (
-              <div key={index} className="fade-in-section">
-                <h3 className="text-xl font-semibold mb-3">{value.title}</h3>
-                <p className="text-gray-600">{value.description}</p>
+            <div className="fade-in-section glass-panel p-8 rounded-lg hover:bg-black/70 transition-colors">
+              <div className="bg-yellow-400/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Check className="w-8 h-8 text-yellow-400" />
               </div>
-            ))}
+              <h3 className="text-xl font-semibold mb-4">Transparency</h3>
+              <p className="text-gray-400">Building trust through honest communication and clear actions</p>
+            </div>
+
+            <div className="fade-in-section glass-panel p-8 rounded-lg hover:bg-black/70 transition-colors">
+              <div className="bg-yellow-400/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <ArrowRight className="w-8 h-8 text-yellow-400" />
+              </div>
+              <h3 className="text-xl font-semibold mb-4">Straight to the point</h3>
+              <p className="text-gray-400">Direct communication without unnecessary complexity</p>
+            </div>
+
+            <div className="fade-in-section glass-panel p-8 rounded-lg hover:bg-black/70 transition-colors">
+              <div className="bg-yellow-400/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Activity className="w-8 h-8 text-yellow-400" />
+              </div>
+              <h3 className="text-xl font-semibold mb-4">We thrive in the flow state</h3>
+              <p className="text-gray-400">Peak performance through focused and efficient development</p>
+            </div>
           </div>
         </div>
       </section>
