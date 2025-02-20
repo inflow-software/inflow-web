@@ -30,10 +30,16 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <div className="waves">
+        <div className="wave"></div>
+        <div className="wave"></div>
+        <div className="wave"></div>
+      </div>
+      
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6 md:px-12 lg:px-24">
+      <section className="relative pt-32 pb-20 px-6 md:px-12 lg:px-24">
         <div className="max-w-6xl mx-auto">
           <div className="text-center space-y-12">
             <img 
