@@ -39,7 +39,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/74cc2065-6695-4ce7-835a-b2643c862647.png" 
               alt="Inflow Logo" 
-              className="h-24 md:h-32 mx-auto mb-8"
+              className="w-48 md:w-64 lg:w-80 h-auto mx-auto mb-8 object-contain"
             />
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
               Fast, Smart, and Built to Last
