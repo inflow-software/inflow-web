@@ -29,17 +29,11 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background text-foreground relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-full h-[800px] overflow-hidden">
-        <div className="wave wave1"></div>
-        <div className="wave wave2"></div>
-        <div className="wave wave3"></div>
-      </div>
-      
+    <div className="min-h-screen bg-background text-foreground">
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6 md:px-12 lg:px-24 relative">
+      <section className="pt-32 pb-20 px-6 md:px-12 lg:px-24">
         <div className="max-w-6xl mx-auto">
           <div className="text-center space-y-12">
             <img 
