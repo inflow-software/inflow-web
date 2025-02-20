@@ -1,7 +1,5 @@
-
 import { useEffect } from 'react';
 import { CircleArrowUp, Check, ArrowRight, Activity } from 'lucide-react';
-import Navbar from '../components/Navbar';
 
 const Index = () => {
   useEffect(() => {
@@ -29,15 +27,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <div className="waves">
-        <div className="wave"></div>
-        <div className="wave"></div>
-        <div className="wave"></div>
-      </div>
-      
-      <Navbar />
-      
+    <>
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-6 md:px-12 lg:px-24">
         <div className="max-w-6xl mx-auto">
@@ -176,7 +166,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 };
 
