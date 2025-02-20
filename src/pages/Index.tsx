@@ -33,11 +33,14 @@ const Index = () => {
       <section className="relative pt-32 pb-20 px-6 md:px-12 lg:px-24">
         <div className="max-w-6xl mx-auto">
           <div className="text-center space-y-12">
-            <img 
-              src="/lovable-uploads/74cc2065-6695-4ce7-835a-b2643c862647.png" 
-              alt="Inflow Logo" 
-              className="w-48 md:w-64 lg:w-80 h-auto mx-auto mb-8 object-contain opacity-0 scale-75 animate-[fade-in_0.8s_ease-out_forwards,scale-in_0.8s_ease-out_forwards]"
-            />
+            <div className="relative z-10">
+              <img 
+                src="/lovable-uploads/74cc2065-6695-4ce7-835a-b2643c862647.png" 
+                alt="Inflow Logo" 
+                className="w-48 md:w-64 lg:w-80 h-auto mx-auto mb-8 object-contain animate-[fadeIn_1s_ease-out] opacity-0"
+                style={{ animationFillMode: 'forwards' }}
+              />
+            </div>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
               Fast, Smart, and Built to Last
             </h1>
