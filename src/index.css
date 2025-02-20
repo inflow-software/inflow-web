@@ -48,37 +48,33 @@
   }
 
   .wave {
-    @apply absolute top-0 left-[-50%] w-[200%] h-[600px];
+    @apply absolute bottom-[-25%] left-[-100%] w-[300%] h-[100%];
     background: rgb(139, 92, 246, 0.1);
     border-radius: 43%;
-    transform-origin: 50% 48%;
   }
 
   .wave1 {
     animation: drift 15000ms infinite linear;
-    background: linear-gradient(90deg, rgba(139, 92, 246, 0.3) 0%, rgba(217, 70, 239, 0.3) 100%);
-    z-index: 1;
+    background: linear-gradient(90deg, rgba(139, 92, 246, 0.1) 0%, rgba(217, 70, 239, 0.1) 100%);
   }
 
   .wave2 {
     animation: drift 25000ms infinite linear;
-    background: linear-gradient(90deg, rgba(15, 23, 42, 0.3) 0%, rgba(14, 165, 233, 0.3) 100%);
-    opacity: 0.5;
-    z-index: 2;
+    background: linear-gradient(90deg, rgba(15, 23, 42, 0.1) 0%, rgba(14, 165, 233, 0.1) 100%);
+    opacity: 0.3;
   }
 
   .wave3 {
     animation: drift 35000ms infinite linear;
-    background: linear-gradient(90deg, rgba(249, 115, 22, 0.3) 0%, rgba(139, 92, 246, 0.3) 100%);
-    opacity: 0.4;
-    z-index: 3;
+    background: linear-gradient(90deg, rgba(249, 115, 22, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+    opacity: 0.2;
   }
 
   @keyframes drift {
     from {
       transform: rotate(0deg);
     }
-    to {
+    from {
       transform: rotate(360deg);
     }
   }
