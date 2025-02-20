@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
-      <div className="pt-32 pb-20 px-6 md:px-12 lg:px-24">
+      <div className="relative z-10 pt-32 pb-20 px-6 md:px-12 lg:px-24">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-12">Contact Us</h1>
           
