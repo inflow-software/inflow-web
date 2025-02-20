@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import { ArrowRight, CircleArrowUp, Mail, MapPin } from 'lucide-react';
 import Navbar from '../components/Navbar';
@@ -29,7 +28,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+    <div className="min-h-screen bg-background text-foreground">
       <Navbar />
       
       {/* Hero Section */}
@@ -47,7 +46,7 @@ const Index = () => {
       </section>
 
       {/* Why Us Section */}
-      <section className="section-padding bg-black text-white">
+      <section className="section-padding bg-black/60 text-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Why Choose Us?</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -84,7 +83,7 @@ const Index = () => {
       </section>
 
       {/* Values Section */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-black/40">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-16">Our Values Are Simple</h2>
           <div className="grid md:grid-cols-3 gap-12">
@@ -103,7 +102,7 @@ const Index = () => {
       </section>
 
       {/* Team Section */}
-      <section className="section-padding bg-black text-white">
+      <section className="section-padding bg-black/60 text-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Our Team</h2>
           <div className="grid md:grid-cols-3 gap-12">
@@ -139,7 +138,7 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-black/40">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Get in Touch</h2>
           <div className="grid md:grid-cols-2 gap-12">
