@@ -144,7 +144,7 @@ const Index = () => {
               {
                 name: "Jiří Buček",
                 role: "Managing Director",
-                image: "/lovable-uploads/019f2cea-e639-4352-b79b-09a2c223ca01.png"
+                image: "/lovable-uploads/22cb0af3-eb12-4617-8ec1-936ca7d5bb23.png"
               },
               {
                 name: "Jason Nel",
@@ -154,7 +154,7 @@ const Index = () => {
               {
                 name: "Martin Majer",
                 role: "Operations Director",
-                image: "/lovable-uploads/22cb0af3-eb12-4617-8ec1-936ca7d5bb23.png"
+                image: "/lovable-uploads/019f2cea-e639-4352-b79b-09a2c223ca01.png"
               }
             ].map((member, index) => (
               <div key={index} className="fade-in-section text-center">
