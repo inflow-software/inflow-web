@@ -32,16 +32,16 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-6 md:px-12 lg:px-24">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center space-y-12">
-            <div className="relative z-10">
+          <div className="text-center">
+            <div className="relative z-10 h-[120px] md:h-[160px] lg:h-[200px] mb-12 flex items-center justify-center">
               <img 
                 src="/lovable-uploads/74cc2065-6695-4ce7-835a-b2643c862647.png" 
                 alt="Inflow Logo" 
-                className="w-48 md:w-64 lg:w-80 h-auto mx-auto mb-8 object-contain animate-[fadeIn_1s_ease-out] opacity-0"
+                className="w-48 md:w-64 lg:w-80 h-auto object-contain animate-[fadeIn_1s_ease-out] opacity-0"
                 style={{ animationFillMode: 'forwards' }}
               />
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
               Fast, Smart, and Built to Last
             </h1>
             <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
