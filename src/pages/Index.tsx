@@ -44,7 +44,7 @@ const Index = () => {
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
               Fast, Smart, and Built to Last
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
               At inflow, we specialise in agile development and long-term support for digital products, helping businesses bring their visions to life with smart, fast, and adaptable solutions.
             </p>
           </div>
@@ -93,7 +93,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-16">Our Values</h2>
           
-          <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-16">
+          <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-16">
             We act honestly, build trust, and get straight to the point. We stay "in shape" when it comes to technology – it is our passion and we stay up to date on what's happening. We're not nerds you can't communicate with; we speak your language.
           </p>
           
