@@ -1,3 +1,4 @@
+
 import { useEffect } from 'react';
 import { CircleArrowUp, Check, ArrowRight, Activity } from 'lucide-react';
 
@@ -35,7 +36,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/74cc2065-6695-4ce7-835a-b2643c862647.png" 
               alt="Inflow Logo" 
-              className="w-48 md:w-64 lg:w-80 h-auto mx-auto mb-8 object-contain"
+              className="w-48 md:w-64 lg:w-80 h-auto mx-auto mb-8 object-contain opacity-0 scale-75 animate-[fade-in_0.8s_ease-out_forwards,scale-in_0.8s_ease-out_forwards]"
             />
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
               Fast, Smart, and Built to Last
