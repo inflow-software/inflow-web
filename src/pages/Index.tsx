@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import { CircleArrowUp, Check, ArrowRight, Activity } from 'lucide-react';
 import React from 'react';
@@ -36,7 +35,7 @@ const Index = () => {
           <div className="text-center">
             <div className="relative z-10 h-[120px] md:h-[160px] lg:h-[200px] mb-12 flex items-center justify-center">
               <img 
-                src="/lovable-uploads/74cc2065-6695-4ce7-835a-b2643c862647.png" 
+                src="/lovable-uploads/c7b2ac4b-d78d-472a-9e1c-c460e73d818a.png" 
                 alt="Inflow Logo" 
                 className="w-48 md:w-64 lg:w-80 h-auto object-contain animate-[fadeIn_1s_ease-out] opacity-0"
                 style={{ animationFillMode: 'forwards' }}
