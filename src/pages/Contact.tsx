@@ -9,9 +9,9 @@ const Contact = () => {
         <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-12">Contact Us</h1>
           
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Contact Information */}
-            <div className="glass-panel p-12 rounded-2xl">
+            <div className="glass-panel p-12 rounded-2xl h-full">
               <div className="space-y-8">
                 <p className="text-lg text-gray-300 mb-8">
                   Our headquarters is located in a beautiful city of Prague. Below you can find the address for any correspondence and contacts for our Sales representative.
@@ -48,11 +48,11 @@ const Contact = () => {
             </div>
 
             {/* Prague Image */}
-            <div className="aspect-[16/9] relative scale-110">
+            <div className="aspect-[16/9] relative">
               <img 
                 src="/lovable-uploads/bcb97545-ecbd-4007-9310-bb7720f70110.png" 
                 alt="Charles Bridge in Prague" 
-                className="absolute inset-0 w-full h-full object-contain rounded-2xl shadow-2xl"
+                className="absolute inset-0 w-full h-full object-fill rounded-2xl shadow-2xl"
               />
             </div>
           </div>
