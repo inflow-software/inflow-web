@@ -12,7 +12,7 @@ const ServiceDesk = () => {
           
           <div className="space-y-16">
             <div className="glass-panel p-8 rounded-lg">
-              <h2 className="text-2xl font-semibold mb-6 text-[#FFC061]">Reliable IT Support for the Long Haul</h2>
+              <h2 className="text-2xl font-semibold mb-6 text-yellow-400">Reliable IT Support for the Long Haul</h2>
               <p className="text-gray-400">
                 At our company, we believe that solid, long-term support is the cornerstone of any successful IT project. 
                 We offer a dedicated service desk available seven days a week during office hours, designed to ensure your 
@@ -26,7 +26,7 @@ const ServiceDesk = () => {
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="space-y-4">
                   <div className="flex items-start gap-4">
-                    <MessageSquare className="w-6 h-6 text-[#FFC061] mt-1" />
+                    <MessageSquare className="w-6 h-6 text-yellow-400 mt-1" />
                     <div>
                       <h3 className="text-xl font-semibold mb-2">L1 Support</h3>
                       <p className="text-gray-400">
@@ -39,7 +39,7 @@ const ServiceDesk = () => {
                 
                 <div className="space-y-4">
                   <div className="flex items-start gap-4">
-                    <ShieldCheck className="w-6 h-6 text-[#FFC061] mt-1" />
+                    <ShieldCheck className="w-6 h-6 text-yellow-400 mt-1" />
                     <div>
                       <h3 className="text-xl font-semibold mb-2">L2 Developer-Level Support</h3>
                       <p className="text-gray-400">
@@ -53,9 +53,9 @@ const ServiceDesk = () => {
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="glass-panel p-6 rounded-lg hover:border-[#FFC061]/50 transition-colors">
+              <div className="glass-panel p-6 rounded-lg hover:border-yellow-400/50 transition-colors">
                 <div className="flex items-center gap-3 mb-4">
-                  <Laptop className="w-6 h-6 text-[#FFC061]" />
+                  <Laptop className="w-6 h-6 text-yellow-400" />
                   <h3 className="text-xl font-semibold">Mobile Apps</h3>
                 </div>
                 <p className="text-gray-400">
@@ -63,9 +63,9 @@ const ServiceDesk = () => {
                 </p>
               </div>
               
-              <div className="glass-panel p-6 rounded-lg hover:border-[#FFC061]/50 transition-colors">
+              <div className="glass-panel p-6 rounded-lg hover:border-yellow-400/50 transition-colors">
                 <div className="flex items-center gap-3 mb-4">
-                  <Server className="w-6 h-6 text-[#FFC061]" />
+                  <Server className="w-6 h-6 text-yellow-400" />
                   <h3 className="text-xl font-semibold">Web Tech</h3>
                 </div>
                 <p className="text-gray-400">
@@ -73,9 +73,9 @@ const ServiceDesk = () => {
                 </p>
               </div>
               
-              <div className="glass-panel p-6 rounded-lg hover:border-[#FFC061]/50 transition-colors">
+              <div className="glass-panel p-6 rounded-lg hover:border-yellow-400/50 transition-colors">
                 <div className="flex items-center gap-3 mb-4">
-                  <LifeBuoy className="w-6 h-6 text-[#FFC061]" />
+                  <LifeBuoy className="w-6 h-6 text-yellow-400" />
                   <h3 className="text-xl font-semibold">24/7 Support</h3>
                 </div>
                 <p className="text-gray-400">
@@ -83,9 +83,9 @@ const ServiceDesk = () => {
                 </p>
               </div>
               
-              <div className="glass-panel p-6 rounded-lg hover:border-[#FFC061]/50 transition-colors">
+              <div className="glass-panel p-6 rounded-lg hover:border-yellow-400/50 transition-colors">
                 <div className="flex items-center gap-3 mb-4">
-                  <Users className="w-6 h-6 text-[#FFC061]" />
+                  <Users className="w-6 h-6 text-yellow-400" />
                   <h3 className="text-xl font-semibold">Team Handover</h3>
                 </div>
                 <p className="text-gray-400">

@@ -18,19 +18,19 @@ const Contact = () => {
                 </p>
                 <div className="space-y-6">
                   <div className="flex items-center space-x-4">
-                    <Mail className="w-6 h-6 text-[#FFC061]" />
-                    <a href="mailto:jason.nel@inflow.software" className="hover:text-[#FFC061] transition-colors">
+                    <Mail className="w-6 h-6 text-yellow-400" />
+                    <a href="mailto:jason.nel@inflow.software" className="hover:text-yellow-400 transition-colors">
                       jason.nel@inflow.software
                     </a>
                   </div>
                   <div className="flex items-center space-x-4">
-                    <Linkedin className="w-6 h-6 text-[#FFC061]" />
-                    <a href="https://www.linkedin.com/company/inflow-software-cz/" target="_blank" rel="noopener noreferrer" className="hover:text-[#FFC061] transition-colors">
+                    <Linkedin className="w-6 h-6 text-yellow-400" />
+                    <a href="https://www.linkedin.com/company/inflow-software-cz/" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition-colors">
                       LinkedIn
                     </a>
                   </div>
                   <div className="flex items-center space-x-4">
-                    <MapPin className="w-6 h-6 text-[#FFC061]" />
+                    <MapPin className="w-6 h-6 text-yellow-400" />
                     <address className="not-italic">
                       Uralská 689/7, 160 00, Prague
                     </address>
