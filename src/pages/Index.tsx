@@ -132,9 +132,6 @@ const Index = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Our Team</h2>
           
           <div className="max-w-3xl mx-auto mb-16 space-y-8">
-            <p className="text-lg text-yellow-400 text-center">
-              Our team brings together over 30 years of combined experience in IT services, Legal, Commercial and operations.
-            </p>
             <div className="space-y-4 text-center">
               <p className="text-lg text-gray-300">
                 Founded by three partners.
@@ -148,7 +145,7 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-12">
+          <div className="grid md:grid-cols-3 gap-12 mb-16">
             {[
               {
                 name: "Jiří Buček",
@@ -180,6 +177,12 @@ const Index = () => {
                 <p className="text-gray-400">{member.description}</p>
               </div>
             ))}
+          </div>
+
+          <div className="max-w-3xl mx-auto">
+            <p className="text-lg text-yellow-400 text-center">
+              Our team brings together over 30 years of combined experience in IT services, Legal, Commercial and operations.
+            </p>
           </div>
         </div>
       </section>
