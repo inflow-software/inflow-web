@@ -48,13 +48,11 @@ const Contact = () => {
             </div>
 
             {/* Prague Image */}
-            <div className="glass-panel p-6 rounded-lg overflow-hidden flex items-center">
-              <img 
-                src="/lovable-uploads/bcb97545-ecbd-4007-9310-bb7720f70110.png" 
-                alt="Charles Bridge in Prague" 
-                className="w-full rounded-lg"
-              />
-            </div>
+            <img 
+              src="/lovable-uploads/bcb97545-ecbd-4007-9310-bb7720f70110.png" 
+              alt="Charles Bridge in Prague" 
+              className="w-full h-full object-cover rounded-lg shadow-2xl"
+            />
           </div>
         </div>
       </div>
