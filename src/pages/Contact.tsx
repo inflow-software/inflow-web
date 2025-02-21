@@ -1,8 +1,11 @@
 
 import Navbar from '../components/Navbar';
 import { Mail, MapPin, Linkedin } from 'lucide-react';
+import { useState } from 'react';
 
 const Contact = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   return <div className="min-h-screen bg-background text-foreground">
       <Navbar />
       <div className="relative z-10 pt-32 pb-20 px-6 md:px-12 lg:px-24">
@@ -49,10 +52,20 @@ const Contact = () => {
 
             {/* Prague Image */}
             <div className="aspect-[16/9] relative">
+              <div className={`
+                absolute inset-0 bg-gray-900/20 backdrop-blur-sm
+                transition-opacity duration-500
+                ${imageLoaded ? 'opacity-0' : 'opacity-100'}
+              `} />
               <img 
                 src="/lovable-uploads/bcb97545-ecbd-4007-9310-bb7720f70110.png" 
                 alt="Charles Bridge in Prague" 
-                className="absolute inset-0 w-full h-full object-fill rounded-2xl shadow-2xl"
+                className={`
+                  absolute inset-0 w-full h-full object-fill rounded-2xl shadow-2xl
+                  transition-all duration-700 transform
+                  ${imageLoaded ? 'scale-100 opacity-100' : 'scale-105 opacity-0'}
+                `}
+                onLoad={() => setImageLoaded(true)}
               />
             </div>
           </div>
