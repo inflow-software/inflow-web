@@ -5,22 +5,22 @@ import Navbar from './Navbar';
 const WaveBackground = () => {
   return (
     <div className="absolute top-0 left-0 w-full overflow-hidden z-0">
-      {/* Mobile waves */}
+      {/* Mobile waves - 30% taller and more curved */}
       <svg 
-        viewBox="0 0 2000 600" 
+        viewBox="0 0 2000 780" 
         className="md:hidden w-[200%] h-auto transform -translate-x-1/4"
         preserveAspectRatio="none"
       >
         {/* First wave - darkest, more pronounced oval */}
         <path
-          d="M0,250C200,280,400,290,600,270C800,250,1000,220,1200,210C1400,200,1600,210,1800,230C2000,250,2200,280,2400,270L2400,0L0,0Z"
+          d="M0,325C200,385,400,405,600,365C800,325,1000,285,1200,270C1400,255,1600,275,1800,305C2000,335,2200,365,2400,350L2400,0L0,0Z"
           fill="#222222"
           className="animate-wave"
         />
         
         {/* Second wave - golden yellow, medium oval */}
         <path
-          d="M0,220C200,240,400,250,600,240C800,230,1000,200,1200,190C1400,180,1600,190,1800,210C2000,230,2200,240,2400,230L2400,0L0,0Z"
+          d="M0,286C200,335,400,350,600,325C800,300,1000,260,1200,247C1400,234,1600,247,1800,273C2000,299,2200,312,2400,299L2400,0L0,0Z"
           fill="#FFC061"
           className="animate-[wave_15s_ease-in-out_infinite_reverse]"
           style={{ opacity: 0.7 }}
@@ -28,7 +28,7 @@ const WaveBackground = () => {
         
         {/* Third wave - light golden, smallest oval */}
         <path
-          d="M0,190C200,210,400,220,600,210C800,200,1000,180,1200,170C1400,160,1600,170,1800,185C2000,200,2200,210,2400,200L2400,0L0,0Z"
+          d="M0,247C200,273,400,286,600,273C800,260,1000,234,1200,221C1400,208,1600,221,1800,240C2000,260,2200,273,2400,260L2400,0L0,0Z"
           fill="#FFE5BE"
           className="animate-[wave_18s_ease-in-out_infinite]"
           style={{ opacity: 0.5 }}
