@@ -1,8 +1,11 @@
-import { useEffect } from 'react';
+
+import { useEffect, useState } from 'react';
 import { CircleArrowUp, Check, ArrowRight, Activity } from 'lucide-react';
 import React from 'react';
 
 const Index = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   useEffect(() => {
     const observerOptions = {
       root: null,
@@ -24,6 +27,11 @@ const Index = () => {
       observer.observe(element);
     });
 
+    // Preload the image
+    const img = new Image();
+    img.src = "/lovable-uploads/c7b2ac4b-d78d-472a-9e1c-c460e73d818a.png";
+    img.onload = () => setImageLoaded(true);
+
     return () => observer.disconnect();
   }, []);
 
@@ -34,12 +42,19 @@ const Index = () => {
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center">
             <div className="relative z-10 h-[120px] md:h-[160px] lg:h-[200px] mb-12 flex items-center justify-center">
-              <img 
-                src="/lovable-uploads/c7b2ac4b-d78d-472a-9e1c-c460e73d818a.png" 
-                alt="Inflow Logo" 
-                className="w-48 md:w-64 lg:w-80 h-auto object-contain animate-[fadeIn_1s_ease-out] opacity-0"
-                style={{ animationFillMode: 'forwards' }}
-              />
+              <div className={`
+                w-48 md:w-64 lg:w-80 h-[120px] md:h-[160px] lg:h-[200px]
+                flex items-center justify-center
+                transition-opacity duration-500
+                ${imageLoaded ? 'opacity-100' : 'opacity-0'}
+              `}>
+                <img 
+                  src="/lovable-uploads/c7b2ac4b-d78d-472a-9e1c-c460e73d818a.png" 
+                  alt="Inflow Logo" 
+                  className="w-full h-full object-contain"
+                  onLoad={() => setImageLoaded(true)}
+                />
+              </div>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
               Fast, Smart, and Built to Last
