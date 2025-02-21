@@ -1,6 +1,5 @@
-
 import { useEffect, useState } from 'react';
-import { CircleArrowUp, Check, ArrowRight, Activity } from 'lucide-react';
+import { Rocket, Shield, Users, Cpu } from 'lucide-react';
 import React from 'react';
 
 const Index = () => {
@@ -75,22 +74,22 @@ const Index = () => {
               {
                 title: "End-to-End Development",
                 description: "We work closely with clients through every phase—from initial tech discovery and design to the full development of IT systems using mobile and web technologies.",
-                icon: <CircleArrowUp className="w-8 h-8 text-yellow-400" />
+                icon: <Rocket className="w-8 h-8 text-yellow-400" />
               },
               {
                 title: "Long Term Support",
                 description: "Our service desk is available seven days a week to provide continuous monitoring, maintenance, and small-scale enhancements.",
-                icon: <CircleArrowUp className="w-8 h-8 text-yellow-400" />
+                icon: <Shield className="w-8 h-8 text-yellow-400" />
               },
               {
                 title: "Dedicated Senior Team",
                 description: "Our team consists exclusively of senior professionals who collaborate on multiple projects over the long term.",
-                icon: <CircleArrowUp className="w-8 h-8 text-yellow-400" />
+                icon: <Users className="w-8 h-8 text-yellow-400" />
               },
               {
                 title: "Tech Driven Mindset",
                 description: "We evaluate emerging tech for faster quality delivery, driven by innovative libraries, AI, and open source tools.",
-                icon: <CircleArrowUp className="w-8 h-8 text-yellow-400" />
+                icon: <Cpu className="w-8 h-8 text-yellow-400" />
               }
             ].map((item, index) => (
               <div key={index} className="fade-in-section p-6 rounded-lg bg-gray-900/50 hover:bg-gray-900/70 transition-all duration-300">
