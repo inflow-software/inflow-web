@@ -35,7 +35,6 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-8">
             <Link to="/" className="nav-link text-white font-semibold">Home</Link>
             <Link to="/development" className="nav-link text-white font-semibold">Development</Link>
-            <Link to="/team" className="nav-link text-white font-semibold">Team</Link>
             <Link to="/contact" className="nav-link text-white font-semibold">Contact</Link>
           </div>
 
@@ -54,7 +53,6 @@ const Navbar = () => {
             <div className="flex flex-col space-y-4 px-6">
               <Link to="/" className="nav-link text-white font-semibold" onClick={() => setIsMenuOpen(false)}>Home</Link>
               <Link to="/development" className="nav-link text-white font-semibold" onClick={() => setIsMenuOpen(false)}>Development</Link>
-              <Link to="/team" className="nav-link text-white font-semibold" onClick={() => setIsMenuOpen(false)}>Team</Link>
               <Link to="/contact" className="nav-link text-white font-semibold" onClick={() => setIsMenuOpen(false)}>Contact</Link>
             </div>
           </div>

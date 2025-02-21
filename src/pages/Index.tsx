@@ -1,3 +1,4 @@
+
 import { useEffect } from 'react';
 import { CircleArrowUp, Check, ArrowRight, Activity } from 'lucide-react';
 import React from 'react';
@@ -130,12 +131,9 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Our Team</h2>
           
-          <div className="max-w-3xl mx-auto mb-16 text-center space-y-4">
-            <p className="text-lg md:text-xl text-gray-300">
-              Founded by three partners. After many years in corporate consultancies, we decided to take things into our own hands.
-            </p>
-            <p className="text-lg md:text-xl text-gray-300">
-              We have grown tired of the inefficiency and corporate rigidness when designing and developing exciting digital products.
+          <div className="max-w-3xl mx-auto mb-16">
+            <p className="text-lg text-yellow-400 text-center">
+              Our team brings together over 30 years of combined experience in IT services, Legal, Commercial and operations.
             </p>
           </div>
 
@@ -144,27 +142,31 @@ const Index = () => {
               {
                 name: "Jiří Buček",
                 role: "Managing Director",
-                image: "/lovable-uploads/22cb0af3-eb12-4617-8ec1-936ca7d5bb23.png"
+                image: "/lovable-uploads/22cb0af3-eb12-4617-8ec1-936ca7d5bb23.png",
+                description: "Leading our strategic vision and technical direction"
               },
               {
                 name: "Jason Nel",
                 role: "Commercial Director",
-                image: "/lovable-uploads/28a5f1e5-7bfe-441f-b4d1-8f73f680760d.png"
+                image: "/lovable-uploads/28a5f1e5-7bfe-441f-b4d1-8f73f680760d.png",
+                description: "Driving business growth and client relationships"
               },
               {
                 name: "Martin Majer",
                 role: "Operations Director",
-                image: "/lovable-uploads/019f2cea-e639-4352-b79b-09a2c223ca01.png"
+                image: "/lovable-uploads/019f2cea-e639-4352-b79b-09a2c223ca01.png",
+                description: "Ensuring smooth delivery of all projects"
               }
             ].map((member, index) => (
-              <div key={index} className="fade-in-section text-center">
+              <div key={index} className="text-center glass-panel p-8 rounded-lg">
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-48 h-48 rounded-full mx-auto mb-6 object-cover"
+                  className="w-48 h-48 rounded-full mx-auto mb-6 object-cover border-2 border-yellow-400"
                 />
-                <h3 className="text-xl font-semibold">{member.name}</h3>
-                <p className="text-gray-400">{member.role}</p>
+                <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
+                <p className="text-yellow-400 mb-4">{member.role}</p>
+                <p className="text-gray-400">{member.description}</p>
               </div>
             ))}
           </div>
