@@ -1,5 +1,6 @@
+
 import { useEffect, useState } from 'react';
-import { Rocket, Shield, Users, Cpu } from 'lucide-react';
+import { Rocket, Shield, Users, Cpu, Check, ArrowRight, Activity } from 'lucide-react';
 import React from 'react';
 
 const Index = () => {
