@@ -1,10 +1,10 @@
-
 import Navbar from '../components/Navbar';
 import { Smartphone, Globe, Database, Cloud } from 'lucide-react';
+import { useEffect } from 'react';
 
 const Development = () => {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground overflow-auto">
       <Navbar />
       <div className="relative z-10 pt-32 pb-20 px-6 md:px-12 lg:px-24">
         <div className="max-w-6xl mx-auto">
