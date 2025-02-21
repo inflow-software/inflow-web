@@ -25,9 +25,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 md:${
         isScrolled ? 'bg-black/80 backdrop-blur-md shadow-lg' : 'bg-black/40 backdrop-blur-sm'
-      }`}
+      } bg-black/40 backdrop-blur-sm md:bg-transparent`}
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
@@ -36,7 +36,7 @@ const Navbar = () => {
             <img 
               src="/lovable-uploads/4a19a835-f205-43f5-b141-2f25d30b3204.png" 
               alt="Logo" 
-              className="h-6 w-auto" // Changed from h-8 to h-6
+              className="h-6 w-auto"
             />
           </Link>
 
