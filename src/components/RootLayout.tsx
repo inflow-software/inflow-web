@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 
 const WaveBackground = () => {
   return (
-    <div className="absolute top-0 left-0 w-full overflow-hidden z-0">
+    <div className="absolute top-0 md:top-0 top-[30vh] left-0 w-full overflow-hidden z-0">
       <svg 
         viewBox="0 0 2000 400" 
         className="w-[200%] h-auto transform -translate-x-1/4"
