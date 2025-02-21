@@ -1,8 +1,20 @@
 
 import Navbar from '../components/Navbar';
 import { Smartphone, Globe, Database, Cloud } from 'lucide-react';
+import { useEffect } from 'react';
 
 const Development = () => {
+  useEffect(() => {
+    const preventDefault = (e: TouchEvent) => {
+      e.preventDefault();
+    };
+
+    document.body.addEventListener('touchstart', preventDefault, { passive: false });
+    return () => {
+      document.body.removeEventListener('touchstart', preventDefault);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />

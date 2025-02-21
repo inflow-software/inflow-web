@@ -1,8 +1,20 @@
 
 import Navbar from '../components/Navbar';
 import { Clock, Users, Server, Laptop, MessageSquare, ShieldCheck, LifeBuoy } from 'lucide-react';
+import { useEffect } from 'react';
 
 const ServiceDesk = () => {
+  useEffect(() => {
+    const preventDefault = (e: TouchEvent) => {
+      e.preventDefault();
+    };
+
+    document.body.addEventListener('touchstart', preventDefault, { passive: false });
+    return () => {
+      document.body.removeEventListener('touchstart', preventDefault);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />
