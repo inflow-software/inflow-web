@@ -1,10 +1,7 @@
-
 import Navbar from '../components/Navbar';
 import { Mail, MapPin, Linkedin } from 'lucide-react';
-
 const Contact = () => {
-  return (
-    <div className="min-h-screen bg-background text-foreground">
+  return <div className="min-h-screen bg-background text-foreground">
       <Navbar />
       <div className="relative z-10 pt-32 pb-20 px-6 md:px-12 lg:px-24">
         <div className="max-w-6xl mx-auto">
@@ -26,12 +23,7 @@ const Contact = () => {
                   </div>
                   <div className="flex items-center space-x-4">
                     <Linkedin className="w-6 h-6 text-yellow-400" />
-                    <a 
-                      href="https://www.linkedin.com/company/inflow-software-cz/" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="hover:text-yellow-400 transition-colors"
-                    >
+                    <a href="https://www.linkedin.com/company/inflow-software-cz/" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition-colors">
                       LinkedIn
                     </a>
                   </div>
@@ -56,23 +48,13 @@ const Contact = () => {
             {/* Prague Image */}
             <div className="glass-panel p-6 rounded-lg overflow-hidden">
               <div className="relative h-full">
-                <img 
-                  src="/lovable-uploads/bcb97545-ecbd-4007-9310-bb7720f70110.png"
-                  alt="Charles Bridge in Prague"
-                  className="w-full h-full object-cover rounded-lg"
-                />
-                <div className="absolute bottom-0 left-0 right-0 bg-black/60 backdrop-blur-sm p-4 rounded-b-lg">
-                  <p className="text-sm text-gray-300 text-center">
-                    View of Charles Bridge and Prague Castle
-                  </p>
-                </div>
+                <img src="/lovable-uploads/bcb97545-ecbd-4007-9310-bb7720f70110.png" alt="Charles Bridge in Prague" className="w-full h-full object-cover rounded-lg" />
+                
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Contact;
