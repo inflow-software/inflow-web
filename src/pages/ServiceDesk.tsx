@@ -75,11 +75,11 @@ const ServiceDesk = () => {
               
               <div className="glass-panel p-6 rounded-lg hover:border-yellow-400/50 transition-colors">
                 <div className="flex items-center gap-3 mb-4">
-                  <LifeBuoy className="w-6 h-6 text-yellow-400" />
-                  <h3 className="text-xl font-semibold">24/7 Support</h3>
+                  <Clock className="w-6 h-6 text-yellow-400" />
+                  <h3 className="text-xl font-semibold">Business Hours</h3>
                 </div>
                 <p className="text-gray-400">
-                  Round-the-clock monitoring and support services.
+                  Support available 7 days a week during business hours.
                 </p>
               </div>
               
