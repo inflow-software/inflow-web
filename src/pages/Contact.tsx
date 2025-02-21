@@ -1,5 +1,7 @@
+
 import Navbar from '../components/Navbar';
 import { Mail, MapPin, Linkedin } from 'lucide-react';
+
 const Contact = () => {
   return <div className="min-h-screen bg-background text-foreground">
       <Navbar />
@@ -47,9 +49,12 @@ const Contact = () => {
 
             {/* Prague Image */}
             <div className="glass-panel p-6 rounded-lg overflow-hidden">
-              <div className="relative h-full">
-                <img src="/lovable-uploads/bcb97545-ecbd-4007-9310-bb7720f70110.png" alt="Charles Bridge in Prague" className="w-full h-full object-cover rounded-lg" />
-                
+              <div className="relative w-full aspect-[16/9]">
+                <img 
+                  src="/lovable-uploads/bcb97545-ecbd-4007-9310-bb7720f70110.png" 
+                  alt="Charles Bridge in Prague" 
+                  className="w-full h-full object-contain rounded-lg"
+                />
               </div>
             </div>
           </div>
@@ -57,4 +62,5 @@ const Contact = () => {
       </div>
     </div>;
 };
+
 export default Contact;
