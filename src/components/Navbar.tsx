@@ -30,7 +30,16 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-6 py-4">
-        <div className="flex items-center justify-end">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <Link to="/" className="flex items-center">
+            <img 
+              src="/lovable-uploads/4a19a835-f205-43f5-b141-2f25d30b3204.png" 
+              alt="Logo" 
+              className="h-8 w-auto"
+            />
+          </Link>
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <Link to="/" className="nav-link text-white font-semibold">Home</Link>
