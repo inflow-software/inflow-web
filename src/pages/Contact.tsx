@@ -1,3 +1,4 @@
+
 import Navbar from '../components/Navbar';
 import { Mail, MapPin, Linkedin } from 'lucide-react';
 import { useState, useEffect } from 'react';
@@ -7,12 +8,18 @@ const Contact = () => {
 
   useEffect(() => {
     const preventDefault = (e: TouchEvent) => {
-      e.preventDefault();
+      const touchY = e.touches[0].clientY;
+      const scrollTop = window.scrollY;
+      
+      // Only prevent default if we're at the top and trying to scroll up
+      if (scrollTop <= 0 && touchY > 0) {
+        e.preventDefault();
+      }
     };
 
-    document.body.addEventListener('touchstart', preventDefault, { passive: false });
+    document.body.addEventListener('touchmove', preventDefault, { passive: false });
     return () => {
-      document.body.removeEventListener('touchstart', preventDefault);
+      document.body.removeEventListener('touchmove', preventDefault);
     };
   }, []);
 
