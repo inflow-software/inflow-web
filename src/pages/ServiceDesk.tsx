@@ -1,23 +1,12 @@
-
 import Navbar from '../components/Navbar';
 import { Clock, Users, Server, Laptop, MessageSquare, ShieldCheck, LifeBuoy } from 'lucide-react';
 import { useEffect } from 'react';
 
 const ServiceDesk = () => {
   useEffect(() => {
-    const preventDefault = (e: TouchEvent) => {
-      const touchY = e.touches[0].clientY;
-      const scrollTop = window.scrollY;
-      
-      // Only prevent default if we're at the top and trying to scroll up
-      if (scrollTop <= 0 && touchY > 0) {
-        e.preventDefault();
-      }
-    };
-
-    document.body.addEventListener('touchmove', preventDefault, { passive: false });
+    document.body.style.overscrollBehavior = 'none';
     return () => {
-      document.body.removeEventListener('touchmove', preventDefault);
+      document.body.style.overscrollBehavior = 'auto';
     };
   }, []);
 
