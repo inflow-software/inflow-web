@@ -31,7 +31,7 @@
   }
 
   * {
-    @apply border-border selection:bg-yellow-400/20;
+    @apply border-border selection:bg-[#FFC061]/20;
   }
 
   body {
@@ -64,11 +64,11 @@
 
 @layer components {
   .nav-link {
-    @apply relative px-3 py-2 text-sm font-medium transition-colors hover:text-yellow-400;
+    @apply relative px-3 py-2 text-sm font-medium transition-colors hover:text-[#FFC061];
   }
 
   .nav-link::after {
-    @apply content-[''] absolute left-0 bottom-0 w-full h-[2px] bg-yellow-400 scale-x-0 transition-transform duration-300 origin-right;
+    @apply content-[''] absolute left-0 bottom-0 w-full h-[2px] bg-[#FFC061] scale-x-0 transition-transform duration-300 origin-right;
   }
 
   .nav-link:hover::after {
