@@ -6,7 +6,7 @@ const RootLayout = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#222222] via-transparent to-transparent h-[50vh]">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#222222] to-transparent">
           <div 
             className="absolute inset-0 animate-wave" 
             style={{
