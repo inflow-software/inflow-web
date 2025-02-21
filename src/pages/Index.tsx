@@ -131,10 +131,21 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">Our Team</h2>
           
-          <div className="max-w-3xl mx-auto mb-16">
+          <div className="max-w-3xl mx-auto mb-16 space-y-8">
             <p className="text-lg text-yellow-400 text-center">
               Our team brings together over 30 years of combined experience in IT services, Legal, Commercial and operations.
             </p>
+            <div className="space-y-4 text-center">
+              <p className="text-lg text-gray-300">
+                Founded by three partners.
+              </p>
+              <p className="text-lg text-gray-300">
+                After many years in corporate consultancies, we decided to take things into our own hands.
+              </p>
+              <p className="text-lg text-gray-300">
+                We have grown tired of the inefficiency and corporate rigidness when designing and developing exciting digital products.
+              </p>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-12">
