@@ -47,70 +47,52 @@
   }
 
   .waves {
-    @apply fixed top-0 left-0 w-full h-[500px] overflow-hidden;
+    @apply fixed top-0 left-0 w-full overflow-hidden;
+    height: 100vh;
     background: linear-gradient(180deg, #9C7A36 0%, rgba(156, 122, 54, 0) 100%);
     z-index: 0;
   }
 
   .wave {
-    @apply absolute left-0 w-[200%];
-    height: 200px;
-    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 800 88.7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23FFC061'/%3E%3C/svg%3E");
+    @apply absolute left-[-100%] w-[300%];
+    height: 600px;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 800 88.7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23203E3F'/%3E%3C/svg%3E");
     background-position: 0 bottom;
     background-repeat: repeat-x;
-    animation: wave-movement-1 20s linear infinite;
-    transform: rotate(180deg);
-    transform-origin: center top;
-    top: 50px;
+    animation: wave-animation 18s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    transform-origin: center bottom;
+    top: -200px;
   }
 
   .wave:nth-of-type(2) {
-    top: 100px;
-    animation: wave-movement-2 25s linear infinite;
+    top: -180px;
+    animation: wave-animation 24s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
     opacity: 0.75;
-    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 800 88.7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23FFE5BE'/%3E%3C/svg%3E");
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 800 88.7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23152A2B'/%3E%3C/svg%3E");
   }
 
   .wave:nth-of-type(3) {
-    top: 150px;
-    animation: wave-movement-3 30s linear infinite;
+    top: -160px;
+    animation: wave-animation 30s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
     opacity: 0.5;
-    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 800 88.7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%239C7A36'/%3E%3C/svg%3E");
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 800 88.7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%230B1516'/%3E%3C/svg%3E");
   }
 
-  @keyframes wave-movement-1 {
+  @keyframes wave-animation {
     0% {
-      transform: translate(0, 0) rotate(180deg);
+      transform: translateX(0) translateY(0) rotate(0deg);
+    }
+    25% {
+      transform: translateX(15%) translateY(30px) rotate(2deg);
     }
     50% {
-      transform: translate(-50%, 15px) rotate(180deg);
+      transform: translateX(30%) translateY(0) rotate(0deg);
+    }
+    75% {
+      transform: translateX(45%) translateY(-30px) rotate(-2deg);
     }
     100% {
-      transform: translate(-100%, 0) rotate(180deg);
-    }
-  }
-
-  @keyframes wave-movement-2 {
-    0% {
-      transform: translate(-33%, 15px) rotate(180deg);
-    }
-    50% {
-      transform: translate(-83%, -15px) rotate(180deg);
-    }
-    100% {
-      transform: translate(-133%, 15px) rotate(180deg);
-    }
-  }
-
-  @keyframes wave-movement-3 {
-    0% {
-      transform: translate(-66%, -15px) rotate(180deg);
-    }
-    50% {
-      transform: translate(-116%, 15px) rotate(180deg);
-    }
-    100% {
-      transform: translate(-166%, -15px) rotate(180deg);
+      transform: translateX(60%) translateY(0) rotate(0deg);
     }
   }
 
